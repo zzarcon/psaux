@@ -15,7 +15,7 @@ Display the `user`, `pid`, `cpu` and `mem` of all the running processes:
 ```javascript
 const psaux = require('psaux');
 
-psaux.then(list => {  
+psaux().then(list => {  
   list.forEach(ps => {
     console.log(ps.user, ps.pid, ps.cpu, ps.mem);
   });
@@ -25,7 +25,7 @@ psaux.then(list => {
 Find a concrete process using his **pid**
 
 ```javascript
-psaux.then(list => {  
+psaux().then(list => {  
   let chrome = list.query({pid: 12345});
 
   console.log('Google chrome is using ' + chrome.cpu + '% of CPU and ' + chrome.mem + '% of memory');
@@ -35,7 +35,7 @@ psaux.then(list => {
 Display inefficient processes started from the `root` user.
 
 ```javascript
-psaux.then(list => {  
+psaux().then(list => {  
   let inefficient = list.query({
     user: 'root',
     mem: '>5'
@@ -48,7 +48,7 @@ psaux.then(list => {
 Search for a process containing the passed string (very useful if you don't know the pid)
 
 ```javascript
-psaux.then(list => {  
+psaux().then(list => {  
   let chrome = list.query({command: '~chrome'});
 
   console.log('Processes started by root and using more that 10% of memory');
