@@ -11,7 +11,7 @@ describe('psaux', function() {
   });
 
   describe('#Filter', function() {
-    it('Apply filters on the returned process list', () => {
+    it('Apply filters on the returned process list', function() {
       expect(psaux).to.be.a('function');
     });
   });
