@@ -70,7 +70,7 @@ list.query({
 
 * `>` Greater than: `>5`
 * `<` Lower than: `<5`
-* `~` Contains: `~Chrome
+* `~` Contains: `~Chrome`
 
 # Properties
 
