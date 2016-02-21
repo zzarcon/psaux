@@ -1,5 +1,5 @@
 node_js:
-  - "4.0"
+  - "4.1"
 install:
   - "npm i"
 script:
