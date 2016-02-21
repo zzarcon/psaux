@@ -4,7 +4,7 @@
   "description": "Display processes info in Node",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "mocha --reporter spec --ui bdd --timeout 5000 test/*.js"
   },
   "engines": {
     "node": ">=0.12"
@@ -16,7 +16,8 @@
   "keywords": [
     "ps",
     "aux",
-    "process"
+    "process",
+    "status"
   ],
   "author": "zzarcon",
   "license": "MIT",
@@ -28,6 +29,8 @@
     "execa": "^0.2.2"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5",
     "relaser": "^0.2.0"
   }
 }
