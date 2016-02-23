@@ -19,6 +19,7 @@
     "process",
     "status"
   ],
+  "os": ["darwin", "linux"],
   "author": "zzarcon",
   "license": "MIT",
   "bugs": {
