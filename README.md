@@ -50,9 +50,11 @@ Search for a process containing the passed string (very useful if you don't know
 ```javascript
 psaux().then(list => {  
   let chrome = list.query({command: '~chrome'});
-
-  console.log('Processes started by root and using more that 10% of memory');
-});
+  
+  if (chrome) {
+    console.log('Chrome process found!', chrome);
+  }
+}); 
 ```
 
 # Filters
