@@ -89,3 +89,7 @@ The properties you can access are basically the same listed in the `ps` command:
 * **started**: starting time or date of the process
 * **time**: cumulative CPU time
 * **command**: command with all its arguments
+
+# Supported platforms
+
+The module currently supports Mac OS, Linux and Windows.
