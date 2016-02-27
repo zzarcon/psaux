@@ -1,6 +1,6 @@
 {
   "name": "psaux",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Display processes info in Node",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,11 @@
     "process",
     "status"
   ],
-  "os": ["darwin", "linux", "win32"],
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
   "author": "zzarcon",
   "license": "MIT",
   "bugs": {
