@@ -21,6 +21,7 @@
   ],
   "os": [
     "darwin",
+    "freebsd",
     "linux",
     "win32"
   ],
