@@ -4,9 +4,12 @@ var psaux = require('../lib/psaux');
 
 describe('psaux', () => {
   describe('#List', () => {
-    it('Return a promise', () => {
+    it('Return a promise', async function () {
+      this.timeout(0);
       expect(psaux).to.be.a('function');
-      expect(psaux()).to.be.an.instanceof(Promise);
+      const promise = psaux();
+      expect(promise).to.be.an.instanceof(Promise);
+      await promise;
     });
   });
 
